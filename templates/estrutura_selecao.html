@@ -1,0 +1,111 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+
+
+<body class="bg-dark text-light"></body>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estruturas de Seleção</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      background-color: #FF0000	;
+      color: red;
+    }
+    header {
+      background-color: #000000;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      color: red;
+    }
+    section {
+      background: rgb(0, 0, 0);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    code {
+      background-color: rgb(13, 48, 13);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+    pre {
+      background-color: ##000000	;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #000000;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Estruturas de Seleção</h1>
+    <p>Conceitos e exemplos em programação</p>
+  </header>
+
+  <section>
+    <h2>O que são Estruturas de Seleção?</h2>
+    <p>Estruturas de seleção são mecanismos usados em programação para tomar decisões baseadas em condições. Elas permitem que o programa execute diferentes trechos de código dependendo do resultado de uma condição lógica.</p>
+  </section>
+
+  <section>
+    <h2>Principais tipos de Estruturas de Seleção</h2>
+    <ul>
+      <li><strong>If</strong>: Executa um bloco de código se a condição for verdadeira.</li>
+      <li><strong>If...else</strong>: Executa um bloco se a condição for verdadeira e outro bloco se for falsa.</li>
+      <li><strong>If...else if...else</strong>: Verifica múltiplas condições em sequência.</li>
+      <li><strong>Switch</strong>: Seleciona a execução com base no valor de uma variável.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Exemplo em JavaScript</h2>
+    <pre><code>const idade = 18;
+
+if (idade &gt;= 18) {
+  console.log("Você é maior de idade.");
+} else {
+  console.log("Você é menor de idade.");
+}</code></pre>
+  </section>
+
+  <section>
+    <h2>Quando usar Estruturas de Seleção?</h2>
+    <p>Use estruturas de seleção sempre que precisar executar diferentes ações dependendo de condições específicas, como validar dados, controlar fluxo do programa, reagir a entradas do usuário, entre outros.</p>
+  </section>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+{% endblock %}

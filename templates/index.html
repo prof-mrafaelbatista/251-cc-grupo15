@@ -1,0 +1,84 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+  <title>Fundamentos de Programação em Python</title>
+
+</head>
+<body>
+    <h1>Fundamentos da Programação em Python</h1>
+    <p class="text-secondary">Aprenda os conceitos da linguagem python</p>
+    <div class="card mb-4 shadow-sm bg-dark text-light border-secondary">
+
+
+      <div class="card-body">
+        <h3 class="card-title">Introdução</h3>
+        <p>Python é uma linguagem de programação, interpretada e com uma sintaxe simples e fácil de aprender. É amplamente utilizada em áreas como desenvolvimento web, ciência de dados e inteligência artificial.</p>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm bg-dark text-light border-secondary">
+      <div class="card-body">
+        <h3 class="card-title"> Variáveis e Tipos de Dados</h3>
+        <p>Variáveis armazenam valores que podem ser utilizados e modificados no programa. Os principais tipos de dados em Python são:</p>
+        <ul>
+          <li><code>int</code>: números inteiros (ex: 10)</li>
+          <li><code>float</code>: números decimais (ex: 3.14)</li>
+          <li><code>str</code>: textos (ex: "Olá Mundo")</li>
+          <li><code>bool</code>: valores booleanos (<code>True</code> ou <code>False</code>)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm bg-dark text-light border-secondary">
+      <div class="card-body">
+        <h3 class="card-title"> Operadores</h3>
+        <p>Python possui muitos Operadores:</p>
+        <ul>
+          <li><strong>Aritméticos</strong>: <code>+ - * / // % **</code></li>
+          <li><strong>Comparação</strong>: <code>== != > < >= <=</code></li>
+          <li><strong>Lógicos</strong>: <code>and</code>, <code>or</code>, <code>not</code></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm bg-dark text-light border-secondary">
+      <div class="card-body">
+        <h3 class="card-title">Estruturas Condicionais</h3>
+        <p>Usadas para tomar decisões no código:</p>
+<pre><code class="text-white">idade = 18
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")</code></pre>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm bg-dark text-light border-secondary">
+      <div class="card-body">
+        <h3 class="card-title">Laços de Repetição</h3>
+        <p>Usados para repetir instruções:</p>
+<pre><code class="text-white">for i in range(5):
+    print(i)
+
+contador = 0
+while contador < 5:
+    print(contador)
+    contador += 1</code></pre>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm bg-dark text-light border-secondary">
+      <div class="card-body">
+        <h3 class="card-title">Funções</h3>
+        <p>Funções são blocos de código reutilizáveis:</p>
+<pre><code class="text-white">def saudacao(nome):
+    print(f"Olá, {nome}!")
+
+saudacao("Bruno")</code></pre>
+      </div>
+    </div>
+
+
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+
+
+<body class="bg-dark text-light"></body>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vetores e Matrizes em Python</title>
+
+  <style>
+    body {
+      background-color: #000000;
+      color: #0000FF;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #000000;
+      color: #0000FF;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 2px solid #0000FF;
+    }
+    section {
+      background-color: #000000;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    h1, h2 {
+      color: #0000FF;
+    }
+    ul {
+      line-height: 1.6;
+    }
+    code {
+      background-color: #000000;
+      color: #90ee90;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+    pre {
+      background-color: #000000;
+      color: #90ee90;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #000000;
+      color: #aaa;
+      border-top: 1px solid #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vetores e Matrizes em Python</h1>
+    <p>Introdução prática ao uso de listas e listas aninhadas</p>
+  </header>
+
+  <section>
+    <h2>O que são Vetores?</h2>
+    <p>Vetores, também conhecidos como listas em Python, são estruturas que armazenam vários elementos em uma única variável. Eles permitem acesso direto por índice e são muito utilizados em programação.</p>
+  </section>
+
+  <section>
+    <h2>Exemplo de Vetor</h2>
+    <pre><code>frutas = ["maçã", "banana", "laranja"]
+print(frutas[0])  # Saída: maçã</code></pre>
+  </section>
+
+  <section>
+    <h2>O que são Matrizes?</h2>
+    <p>Matrizes são listas de listas, ou seja, uma estrutura bidimensional que pode ser usada para representar tabelas ou grids de dados.</p>
+  </section>
+
+  <section>
+    <h2>Exemplo de Matriz</h2>
+    <pre><code>matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matriz[1][2])  # Saída: 6</code></pre>
+  </section>
+
+  <section>
+    <h2>Como percorrer Vetores e Matrizes</h2>
+    <pre><code># Vetor
+for fruta in frutas:
+    print(fruta)
+
+# Matriz
+for linha in matriz:
+    for valor in linha:
+        print(valor, end=" ")
+    print()</code></pre>
+  </section>
+
+</body>
+</html>
+
+
+{% endblock %}
